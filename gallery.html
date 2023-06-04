@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artbnb</title>
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../css/gallery.css">
+    <link rel="icon" type="image/x-icon" href="../images/faviconw.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,800;1,400;1,800&family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <a href="index.php"> <img src="../images/logow.png" alt="back to home page" class="logo"></a>
+        <nav class="navMain">
+            <li> <a href="../index.php"> Home </a></li>
+            <li> <a href="../studio.html"> Studio </a></li>
+            <li> <a href="../gallery.html"> Gallery </a></li>
+            <li> <a href="../about.html"> About </a></li>
+            <a href="search.php"> <img src="../images/search.png" alt="go to searching page" class="search"></a>
+        </nav>
+    </header>
+
+
+    <section class="container">
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="carousel">
+                <img src="../images/gallery1.jpg" alt="">
+                <img src="../images/gallery2.jpg" alt="">
+                <img src="../images/gallery3.jpg" alt="">
+            </div>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+    </section>
+
+    <section class="galleries">
+
+        <div class="hr-theme">
+            <div class="hr-left"></div>
+            <h1> Our galleries </h1>
+        </div>
+
+        <div class="prez">
+
+            <div class="gallery">
+                <div class="descGallery" data-aos="fade-right" data-aos-duration="3000">
+                    <h2> Atrium </h2>
+                    <h3> A pristine haven of artistic expression.</h3>
+                    <p class="textGallery"> Step into a world of minimalist aesthetics where white dominates the space,
+                        providing a blank
+                        canvas
+                        for our artists to showcase their creations.
+                    </p>
+                    <a href="../model2.php?id=4" class="btn-details"> More </a>
+                </div>
+                <img src="images/gallery1.jpg" alt="" class="imgGallery">
+
+            </div>
+            <div class="gallery">
+                <img src="images/gallery2.jpg" alt="" class="imgGallery">
+
+                <div class="descGallery" data-aos="fade-left" data-aos-duration="3000">
+                    <h2> Abyss </h2>
+                    <h3> A realm of refined elegsance and captivating allure.</h3>
+                    <p class="textGallery"> Step into a world cloaked in dignified darkness, where black reigns supreme,
+                        exuding an air of sophistication.
+                    </p>
+                    <a href="../model2.php?id=5" class="btn-details"> More </a>
+                </div>
+
+            </div>
+            <div class="gallery">
+                <div class="descGallery" data-aos="fade-right" data-aos-duration="3000">
+                    <h2> Homestead </h2>
+                    <h3> A tranquil retreat nestled in nature's embrace.</h3>
+                    <p class="textGallery"> Step into a world where art and rustic charm intertwine, creating a warm and
+                        inviting atmosphere.
+                    </p>
+                    <a href="../model2.php?id=6" class="btn-details"> More </a>
+                </div>
+                <img src="images/gallery3.jpg" alt="" class="imgGallery">
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <section class="info">
+
+        <h4>Gallery</h4>
+
+        <div class="dinfos">
+            <img class="imgAbout" src="../images/aboutgallery.jpg" alt="">
+            <div class="dText">
+                <h5>About</h5>
+                <p class="textAbout" data-aos="fade-left" data-aos-duration="2000" data-aos-easing="ease-in-out">We
+                    provide a platform for artists to showcase
+                    their creative works to a wide audience.
+                    <br><br>
+                    We believe that every artist deserves a space where their art can be appreciated and celebrated.
+                    That's why
+                    we offer a curated gallery where you can exhibit your artwork and connect with art enthusiasts and
+                    potential
+                    buyers.
+                    <br><br>
+
+                    Whether you're a painter, sculptor, photographer, or any other type of artist, our gallery provides
+                    a
+                    versatile and dynamic setting to showcase your unique artistic expression. We invite you to explore
+                    our
+                    gallery and book your exhibition space now.s
+                </p>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+    <footer>
+        <nav class="navFoot">
+            <li> <a href="../index.php"> Home </a></li>
+            <li> <a href="../studio.html"> Studio </a></li>
+            <li> <a href="../gallery.html"> Gallery </a></li>
+            <li> <a href="../about.html"> About </a></li>
+            <li> <a href="../term.html"> Legal Policies</a></li>
+        </nav>
+
+        <p class="credit"> © Cécile PHAN NGUYEN - All rights reserved </p>
+
+    </footer>
+
+
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="../slider.js"></script>
+
+</html>

@@ -1,0 +1,302 @@
+/* section presentation */
+.stud {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.bg-img {
+    width: 100%;
+    height: 100vh;
+
+    background-position: center;
+    background-size: cover;
+    filter: blur(3px);
+
+}
+
+
+.bg-text {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+
+    border: 3px solid #f1f1f1;
+    position: absolute;
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+}
+
+.btn-position {
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 80px;
+
+    z-index: 2;
+}
+
+/*description gallery*/
+.descriptif {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: #353535;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin: 0;
+    color: #efa88a;
+
+}
+
+.hr-theme {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hr-left {
+    width: 18%;
+    margin-right: 60px;
+    border-bottom: 1px solid #ffffff;
+}
+
+
+.description {
+    width: 60%;
+    margin-left: 250px;
+    font-size: 1.1em;
+}
+
+/* section price */
+
+.price {
+    height: 100vh;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #181818;
+}
+
+.tarif {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+
+}
+
+.pict {
+    width: 300px;
+    height: 200px;
+
+    object-fit: cover;
+}
+
+.textPrice {
+    width: 300px;
+}
+
+h3 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #EFA88A;
+
+}
+
+h4 {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    font-weight: 100;
+    margin: 0;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.border {
+    border-left: 6px #353535 solid;
+    border-right: 6px #353535 solid;
+}
+
+/* btn booking */
+
+.btn-book {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+
+    width: 50px;
+    border: 1px solid #efa88a;
+    color: #efa88a;
+    background-color: transparent;
+    text-decoration: none;
+    text-align: center;
+
+    padding: 5px 20px;
+
+    margin-top: 20px;
+}
+
+.btn-book:hover {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    border: 1px solid #ffffff;
+    background-color: #926552;
+    color: #ffffff;
+    transition: all 1s;
+}
+
+/* section materials */
+
+.materials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+    height: 80vh;
+}
+
+
+h5 {
+    font-size: 2.5em;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin: 0;
+    color: #efa88a;
+
+}
+
+
+/* disposition img & texte */
+
+.desc-materials {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.pic {
+    width: 200px;
+    height: 200px;
+
+    object-fit: cover;
+}
+
+
+.d-material {
+    width: 500px;
+}
+
+.d-material+p {
+    text-align: center;
+    font-style: italic;
+
+}
+
+.secPics {
+    display: flex;
+    margin: 20px 0 40px 0;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+
+@media screen and (max-width: 1130px) {
+
+    .tarif {
+        width: 300px;
+        padding: 20px;
+
+    }
+
+    .pict {
+        width: 300px;
+        height: 200px;
+    }
+
+    .textPrice {
+        width: 300px;
+        font-size: 0.8em;
+    }
+
+    h3 {
+        margin-bottom: 20px;
+        font-size: 1.2em;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+
+}
+
+@media(max-width:1000px) {
+
+    .price {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .pict {
+        width: 150px;
+        height: 100px;
+
+        object-fit: cover;
+    }
+
+    .textPrice {
+        width: 200px;
+    }
+
+    h3 {
+        margin-bottom: 10px;
+        font-size: 1.2em;
+        font-weight: 200;
+
+    }
+
+    h4 {
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .desc-materials {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+
+}

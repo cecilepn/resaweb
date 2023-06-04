@@ -1,0 +1,105 @@
+header {
+    position: inherit;
+}
+
+.container {
+    width: fit-content;
+    margin: auto auto;
+    margin-bottom: 40px;
+
+
+    padding: 20px;
+    border: 1px solid #E5E8E7;
+    box-shadow: 0 0 10px 1px #E5E8E7;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+h2 {
+    margin: 0;
+}
+
+div.elem-group {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.client {
+    display: flex;
+}
+
+.partUn {
+    margin-right: 20px;
+}
+
+.partDeux {
+    margin-left: 20px;
+}
+
+/* personnal information*/
+
+.persoInfo {
+    display: flex;
+}
+
+div.elem-group:nth-child(2) {
+    margin-left: 10px;
+}
+
+input,
+select,
+textarea {
+    border: 2px solid #777;
+    box-sizing: border-box;
+
+    width: 100%;
+    padding: 10px;
+
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+/* reservation part */
+
+.detail {
+    display: flex;
+}
+
+/* contact part */
+
+textarea {
+    height: 150px;
+}
+
+hr {
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+/* sumbit btn */
+button {
+    font-family: 'Nanum Gothic';
+    font-size: 1em;
+    border: solid 1px white;
+    background-color: transparent;
+    color: white;
+
+    padding: 8px;
+
+    cursor: pointer;
+
+    margin: 0 auto;
+}
+
+button:hover {
+    color: #111;
+    background-color: white;
+
+}

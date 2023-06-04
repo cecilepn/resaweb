@@ -1,0 +1,51 @@
+header {
+    position: inherit;
+}
+
+section {
+    margin: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+h1 {
+    font-family: 'playfair', Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+}
+
+
+.main-text {
+    box-shadow: 0 0 10px 1px #E5E8E7;
+    padding: 20px;
+}
+
+.text {
+    width: fit-content;
+    text-align: justify;
+}
+
+@media (min-width: 1100px) {
+
+    section {
+        width: 800px;
+        position: relative;
+        left: 10%;
+    }
+
+}
+
+
+@media (min-width: 1300px) {
+
+    section {
+        width: 800px;
+        position: relative;
+        left: 20%;
+    }
+
+}

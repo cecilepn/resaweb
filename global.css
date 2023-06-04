@@ -1,0 +1,182 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1C1C1C;
+    color: rgb(244, 241, 241);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* font-family */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
+
+}
+
+/* bar navigation */
+header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: #353535;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    gap: 80px;
+    align-items: center;
+    justify-content: flex-end;
+    margin: auto;
+    margin-right: 80px;
+    font-size: 1.2em;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.logo {
+    width: 60px;
+    object-fit: contain;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+.search {
+    width: 25px;
+    height: 25px;
+}
+
+li {
+    display: inline;
+}
+
+h1 a {
+    text-decoration: none;
+    color: rgb(244, 241, 241);
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(244, 241, 241);
+    transition: all 0.3s ease-in;
+    position: relative;
+}
+
+li a:after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    margin: auto;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+li:hover a {
+    color: white;
+}
+
+li:hover a:after {
+    /* text-decoration: underline; */
+    transform: scaleX(1);
+}
+
+/* arrow to the right */
+.arrow {
+    content: "\2192";
+}
+
+/* reservation btn */
+
+.reservation-btn {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+    border: 1px solid #efa88a;
+    color: #efa88a;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+
+    padding: 10px 40px;
+
+}
+
+.reservation-btn:hover {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    border: 1px solid #ffffff;
+    background-color: #926552;
+    color: #ffffff;
+    transition: all 1s;
+}
+
+/* footer */
+
+.navFoot {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 1.2em;
+
+    border-top: rgb(244, 241, 241) solid 1px;
+    padding-top: 20px;
+
+    justify-content: center;
+}
+
+.credit {
+    text-align: center;
+    font-weight: 500;
+}
+
+/* viewport 768px*/
+
+
+@media (max-width: 900px) {
+
+    nav {
+        font-size: 1em;
+    }
+
+
+    .logo {
+        width: 50px;
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+
+    .search {
+        width: 20px;
+        height: fit-content;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 1.8em;
+        font-weight: 400;
+        color: rgb(244, 241, 241);
+        margin: auto;
+        padding: 10px;
+    }
+
+    .navFoot {
+        font-size: 1.2em;
+    }
+}

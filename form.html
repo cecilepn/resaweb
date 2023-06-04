@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artbnb</title>
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="icon" type="image/x-icon" href="../images/faviconw.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,800;1,400;1,800&family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.php"> <img src="../images/logow.png" alt="back to home page" class="logo"></a>
+        <nav class="navMain">
+            <li> <a href="../index.php"> Home </a></li>
+            <li> <a href="../studio.html"> Studio </a></li>
+            <li> <a href="../gallery.html"> Gallery </a></li>
+            <li> <a href="../about.html"> About </a></li>
+            <a href="search.php"> <img src="../images/search.png" alt="go to searching page" class="search"></a>
+        </nav>
+    </header>
+
+
+    <h1>Booking form </h1>
+
+    <section class="container">
+
+        <form action="../reservation.php" method="post">
+            <div class="client">
+                <div class="partUn">
+                    <h2>Personnal informations </h2>
+
+                    <div class="persoInfo">
+                        <div class="elem-group">
+                            <label for="firstName"> First Name *</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Cécile" required>
+                        </div>
+                        <div class="elem-group">
+                            <label for="lastName"> Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Nguyen" required>
+                        </div>
+                    </div>
+
+                    <div class="elem-group">
+                        <label for="email">Mail Address *</label>
+                        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                    </div>
+
+                    <div class="elem-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="0612345678" required>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="partDeux">
+                    <h2> Reservation </h2>
+
+                    <div class="detail">
+                        <div class="elem-group inlined">
+                            <label for="guest">Guests *</label>
+                            <input type="number" id="guest" name="guest" placeholder="0" min="1" max="10" required>
+                        </div>
+
+                        <div class="elem-group inlined">
+                            <label for="checkin-date">Check-in Date *</label>
+                            <input type="date" id="checkin-date" name="checkin" required>
+                        </div>
+
+                        <div class="elem-group inlined">
+                            <label for="checkout-date">Check-out Date *</label>
+                            <input type="date" id="checkout-date" name="checkout" required>
+                        </div>
+                    </div>
+
+                    <div class="elem-group">
+                        <label for="room-selection">Select Studio *</label>
+                        <select id="room-selection" name="room_preference" required>
+                            <option value=""> Choose your Studio </option>
+                            <option value="1">Colorful</option>
+                            <option value="2">Messy</option>
+                            <option value="3">Minimalist</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <h2> Contact </h2>
+
+            <div class="elem-group">
+                <label for="message">Anything Else?</label>
+                <textarea id="message" name="message"
+                    placeholder="Tell us anything else that might be important."></textarea>
+            </div>
+            <p>Required Informations *</p>
+            <button type="submit" aria-describedby="room-selection">Book Now</button>
+        </form>
+    </section>
+
+
+
+    <footer>
+        <nav class="navFoot">
+            <li> <a href="../index.php"> Home </a></li>
+            <li> <a href="../studio.html"> Studio </a></li>
+            <li> <a href="../gallery.html"> Gallery </a></li>
+            <li> <a href="../about.html"> About </a></li>
+            <li> <a href="../term.html"> Legal Policies</a></li>
+        </nav>
+
+        <p class="credit"> © Cécile PHAN NGUYEN - All rights reserved </p>
+
+    </footer>
+
+
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="index.js"></script>
+
+</html>
